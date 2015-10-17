@@ -80,20 +80,14 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
   
   func signUpViewController(signUpController: PFSignUpViewController, shouldBeginSignUp info: [NSObject : AnyObject]) -> Bool {
     var isInfoComplete : Bool = true
-    // TODO
-    /*for (key, value) in info {
-      let fieldValue: AnyObject? = value
-      if (fieldValue?.length < 1) {
-        isInfoComplete = false
-        break;
-      } else if signUpController.signUpView?.usernameField!.text! ==  nil {
-        isInfoComplete = false
-        break;
-      } else if signUpController.signUpView?.passwordField!.text! == nil {
+    // TODO: show error message
+    for (key, value) in info {
+      let fieldValue: String? = value as? String
+      if let fieldValue = fieldValue where fieldValue.isEmpty {
         isInfoComplete = false
         break;
       }
-    }*/
+    }
     return isInfoComplete
   }
   
