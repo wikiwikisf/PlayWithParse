@@ -13,8 +13,6 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-    
-    // seedTestData()
   }
   
   override func viewDidAppear(animated: Bool) {
@@ -74,6 +72,8 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
   
   //MARK: PFSignUpViewControllerDelegate
   func signUpViewController(signUpController: PFSignUpViewController, didSignUpUser user: PFUser) {
+    // TODO:
+    // Set User.currentUser as signed up user
     self.dismissViewControllerAnimated(true, completion: nil)
     self.performSegueWithIdentifier("loginSegue", sender: self)
   }
@@ -95,37 +95,6 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
     print("Failed to signup \(error?.description)")
   }
   
-  
-  func seedTestData() {
-    let url = NSURL(string: "https://api.parse.com/1/classes/TestClass")
-    var request = NSURLRequest(URL: url!)
-    let mutableRequest : NSMutableURLRequest = request.mutableCopy() as! NSMutableURLRequest
-    
-    mutableRequest.addValue("8PyrDwXNuLcoxoX6s9M00AtmBePx8nWfcSw8p3CG", forHTTPHeaderField: "X-Parse-Application-Id")
-    mutableRequest.addValue("jsFfajTIVpTMnjWx7LKfdjGYVyX4GqE01KVIjHcU", forHTTPHeaderField: "X-Parse-REST-API-Key")
-    mutableRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-    mutableRequest.addValue("application/json", forHTTPHeaderField: "Accept")
-    
-    request = mutableRequest.copy() as! NSURLRequest
-    
-    let session = NSURLSession(
-      configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
-      delegate:nil,
-      delegateQueue:NSOperationQueue.mainQueue()
-    )
-    
-    let task : NSURLSessionDataTask = session.dataTaskWithRequest(request,
-      completionHandler: { (dataOrNil, response, error) in
-        if let data = dataOrNil {
-          if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
-            data, options:[]) as? NSDictionary {
-              NSLog("response: \(responseDictionary)")
-          }
-        }
-    });
-    task.resume()
-  }
-
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.

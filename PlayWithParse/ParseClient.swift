@@ -8,12 +8,15 @@
 
 import UIKit
 
-let parseBaseURL = NSURL(string: "https://api.parse.com")
-let appId = "8PyrDwXNuLcoxoX6s9M00AtmBePx8nWfcSw8p3CG"
-let restAPIKey = "jsFfajTIVpTMnjWx7LKfdjGYVyX4GqE01KVIjHcU"
+let parseBaseURL = NSURL(string: "https://api.parse.com/1/")
+
 class ParseClient {
-  //static let instance = ParseClient(parseBaseURL)
+  static let instance = ParseClient()
   
+  func getCurrentUser() {
+    
+    
+  }
   /*func getTestName(params: NSDictionary?, completion: (name: [String]?, error: NSError?) -> ()) {
       var request = NSMutableURLRequest()
       request.HTTPMethod = "GET"

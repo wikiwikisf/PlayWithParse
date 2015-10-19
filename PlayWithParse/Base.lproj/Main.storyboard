@@ -24,10 +24,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Parse View Controller-->
         <scene sceneID="k0A-Vf-dPy">
             <objects>
-                <viewController id="E9F-WY-hUI" sceneMemberID="viewController">
+                <viewController id="E9F-WY-hUI" customClass="ParseViewController" customModule="PlayWithParse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g3J-2n-aQw"/>
                         <viewControllerLayoutGuide type="bottom" id="LbU-vg-naB"/>

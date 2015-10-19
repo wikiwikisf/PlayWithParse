@@ -27,6 +27,7 @@
 		F10BD8461BCC7A0800A6DB9F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10BD8451BCC7A0800A6DB9F /* SystemConfiguration.framework */; };
 		F10BD8481BCC7A1900A6DB9F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F10BD8471BCC7A1900A6DB9F /* libsqlite3.0.tbd */; };
 		F10BD8581BCC81FD00A6DB9F /* ParseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10BD8571BCC81FD00A6DB9F /* ParseClient.swift */; settings = {ASSET_TAGS = (); }; };
+		F1CBD3AE1BD4BA8F002CA365 /* ParseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CBD3AD1BD4BA8F002CA365 /* ParseViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		F1F692841BCF1E9900BA25AE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F692831BCF1E9900BA25AE /* Social.framework */; };
 		F1F692861BCF1E9F00BA25AE /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F692851BCF1E9F00BA25AE /* Twitter.framework */; };
 		F1F692881BCF1EA900BA25AE /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F692871BCF1EA900BA25AE /* Accounts.framework */; };
@@ -60,6 +61,7 @@
 		F10BD84B1BCC7A6400A6DB9F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		F10BD84F1BCC7B0500A6DB9F /* PlayWithParse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlayWithParse-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		F10BD8571BCC81FD00A6DB9F /* ParseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseClient.swift; sourceTree = "<group>"; };
+		F1CBD3AD1BD4BA8F002CA365 /* ParseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseViewController.swift; sourceTree = "<group>"; };
 		F1F692831BCF1E9900BA25AE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F1F692851BCF1E9F00BA25AE /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		F1F692871BCF1EA900BA25AE /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -149,6 +151,7 @@
 				F10BD8561BCC81B500A6DB9F /* API */,
 				F10BD81F1BCC789B00A6DB9F /* AppDelegate.swift */,
 				F10BD8211BCC789B00A6DB9F /* ViewController.swift */,
+				F1CBD3AD1BD4BA8F002CA365 /* ParseViewController.swift */,
 				F10BD8231BCC789B00A6DB9F /* Main.storyboard */,
 				F10BD8261BCC789B00A6DB9F /* Assets.xcassets */,
 				F10BD8281BCC789B00A6DB9F /* LaunchScreen.storyboard */,
@@ -278,6 +281,7 @@
 			files = (
 				F10BD8221BCC789B00A6DB9F /* ViewController.swift in Sources */,
 				F10BD8581BCC81FD00A6DB9F /* ParseClient.swift in Sources */,
+				F1CBD3AE1BD4BA8F002CA365 /* ParseViewController.swift in Sources */,
 				F10BD8201BCC789B00A6DB9F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
