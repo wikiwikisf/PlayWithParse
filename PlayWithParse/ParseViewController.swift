@@ -15,28 +15,6 @@ class ParseViewController: UIViewController {
     
     // Do any additional setup after loading the view.
    // seedRecordingData()
-    
-    let hinaRecordings = ["91HiJ8SMuR", "iGbMRGF01C", "pUzy81P867"]
-    let hinaUserId = "UQhUdL6sEI"
-    let chrisRecordings = ["TDEgRf9ChO", "tBamu73h1T", "1Kwsc4zhwe", "be5ImDVWbQ"]
-    let chrisUserId = "A2kmW2mjdp"
-    
-    // REPLACE WITH chris or hina
-    for recording in chrisRecordings {
-      let query = PFQuery(className:"Recordings")
-      query.whereKey("objectId", matchesRegex: recording)
-      query.findObjectsInBackgroundWithBlock {
-        (objects: [PFObject]?, error: NSError?) -> Void in
-        
-        let recording = objects![0]
-        if error == nil {
-          // TODO: REPLACE WITH chris or hina
-          self.setRecordingForUser(recording, userId: chrisUserId)
-        } else {
-          // Log details of the failure
-        }
-      }
-    }
 
   }
   
