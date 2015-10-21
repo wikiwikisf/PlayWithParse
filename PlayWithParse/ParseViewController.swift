@@ -33,9 +33,6 @@ class ParseViewController: UIViewController {
     //mutableRequest.addValue("8PyrDwXNuLcoxoX6s9M00AtmBePx8nWfcSw8p3CG", forHTTPHeaderField: "X-Parse-Application-Id")
     //mutableRequest.addValue("jsFfajTIVpTMnjWx7LKfdjGYVyX4GqE01KVIjHcU", forHTTPHeaderField: "X-Parse-REST-API-Key")
 
-    mutableRequest.addValue("kevnB1HFBZi3EgODBeihdvWmSU7bxsyaTcoLbdTW", forHTTPHeaderField: "X-Parse-Application-Id")
-    mutableRequest.addValue("DupDAQNBTIUkftRbupXGbqi4SjNPgoOMtF3N7ngK", forHTTPHeaderField: "X-Parse-REST-API-Key")
-
     mutableRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
     mutableRequest.addValue("application/json", forHTTPHeaderField: "Accept")
     
